@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/// Pelanggan
 Route::get('/pelanggan','PelangganController@index');
+Route::get('/pelanggan/tambah','PelangganController@tambah');
+Route::get('/pelanggan/hapus/{kode_plgn}','PelangganController@hapus');
+Route::get('/pelanggan/edit/{kode_plgn}','PelangganController@edit');
+Route::put('/pelanggan/update/{kode_plgn}','PelangganController@update');
+Route::post('/pelanggan/simpan','PelangganController@simpan');

@@ -13,7 +13,7 @@
                     CRUD Data Pelanggan
                 </div>
                 <div class="card-body">
-                    <a href="/pegawai/tambah" class="btn btn-primary">Input Pelanggan Baru</a>
+                    <a href="/pelanggan/tambah" class="btn btn-primary">Input Pelanggan Baru</a>
                     <br/>
                     <br/>
                     <table class="table table-bordered table-hover table-striped">
@@ -32,8 +32,8 @@
                                 <td>{{ $p->password }}</td>
                                 <td>{{ $p->email }}</td>
                                 <td>
-                                    <a href="/pelanggan/edit/{{ $p->id }}" class="btn btn-warning">Edit</a>
-                                    <a href="/pelanggan/hapus/{{ $p->id }}" class="btn btn-danger">Hapus</a>
+                                    <a href="/pelanggan/edit/{{ $p->kode_plgn }}" class="btn btn-warning">Edit</a>
+                                    <a href="/pelanggan/hapus/{{ $p->kode_plgn }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                             @endforeach
